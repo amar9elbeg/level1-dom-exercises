@@ -6,7 +6,7 @@ const siteContent = {
     "nav-item-4": "Features",
     "nav-item-5": "About",
     "nav-item-6": "Contact",
-    "img-src": "img/logo.png",
+    "img-src": "img/logo.png", 
   },
   cta: {
     h1: "DOM Is Awesome",
@@ -20,7 +20,7 @@ const siteContent = {
     "about-h4": "About",
     "about-content":
       "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
-    "middle-img-src": "img/mid-page-accent.jpg",
+    "middle-img-src": "img/mid-page-accent.jpeg",
     "services-h4": "Services",
     "services-content":
       "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
@@ -47,13 +47,33 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 const allLinks = document.querySelectorAll("a");
-
 // allLinks.style.color = 'green';
 
 allLinks[0].style.color = "green";
+allLinks[1].style.color = "green";
+allLinks[2].style.color = "green";
+allLinks[3].style.color = "green";
+allLinks[4].style.color = "green";
+allLinks[5].style.color = "green";
+
 
 const link1 = (allLinks[0].textContent = siteContent["nav"]["nav-item-1"]);
-
+const link2 = (allLinks[1].textContent = siteContent["nav"]["nav-item-2"]);
+const link3 = (allLinks[2].textContent = siteContent["nav"]["nav-item-3"]);
+const link4 = (allLinks[3].textContent = siteContent["nav"]["nav-item-4"]);
+const link5 = (allLinks[4].textContent = siteContent["nav"]["nav-item-5"]);
+const link6 = (allLinks[5].textContent = siteContent["nav"]["nav-item-6"]);
 // body starts here
+const ctaImg = document.getElementById("cta-img")
+const ctaTitle = document.getElementById("ctaTitle")
+let middleImg = document.getElementById("middle-img")
+const ctaButton = document.getElementById("ctaButton")
+ctaImg.setAttribute("src", siteContent["cta"]["img-src"])
+
+ctaTitle.textContent = siteContent["cta"]["h1"]
+
+ctaButton.textContent = siteContent["cta"]["button"]
+
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"])
 
 //footer starts here
