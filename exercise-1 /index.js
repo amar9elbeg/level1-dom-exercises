@@ -3,29 +3,39 @@ console.log("project is up");
 // 👉 TASK 1- Select the following elements from the DOM:
 
 // BUTTONS
-const launchButton = null;
-const confirmButton = null;
-const cancelButton = null;
-
+const launchButton = document.getElementById("launchButton");
+const confirmButton = document.getElementById("confirmButton");
+const cancelButton = document.getElementById("cancelButton");
 // MESSAGES
-const successMessage = null;
-const failureMessage = null;
-
+const successMessage = document.getElementsByClassName("success");
+const failureMessage = document.getElementsByClassName("off");
 // MODAL
-const modal = null;
+const modal = document.getElementsByClassName("modal");
 
 // 👉 TASK 2- Demo handling click events on button#launchButton, using:
 //      - HTML
 //      - The DOM's element.onclick
 //      - element.addEventListener()
 
+// launchButton.addEventListener("click", function () {
+    
+// })
+
 // 👉 TASK 3- Create a function that launches!
 // It should open the confirmation modal.
 // Add it as an event listener for click events on the launch button.
 
+// launchButton.addEventListener("click", () => {
+//     document.getElementsByClassName("modal off").style.display = "flex";
+// })
+function launchFunction() {
+ document.getElementsByClassName("modal").style.display = "flex"   
+}
 // 👉 TASK 4- Create a function to confirm the launch.
 // It should close the modal and display a success report.
 // Add it as a listener for clicks on the confirmation button.
+
+
 
 // 👉 TASK 5- Create a function to cancel the launch.
 // It should close the modal and display a failure report.

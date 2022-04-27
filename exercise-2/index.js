@@ -41,7 +41,6 @@ const siteContent = {
     copyright: "Copyright Great Idea! 2018",
   },
 };
-
 // Example: Update the img src for the logo
 // header starts here
 let logo = document.getElementById("logo-img");
