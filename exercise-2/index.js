@@ -77,3 +77,4 @@ ctaButton.textContent = siteContent["cta"]["button"]
 middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"])
 
 //footer starts here
+main-Content.textContent = siteContent["cta"]["h1"]
