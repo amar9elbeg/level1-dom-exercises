@@ -6,7 +6,7 @@ const siteContent = {
     "nav-item-4": "Features",
     "nav-item-5": "About",
     "nav-item-6": "Contact",
-    "img-src": "img/logo.png", 
+    "img-src": "img/logo.png",
   },
   cta: {
     h1: "DOM Is Awesome",
@@ -47,34 +47,75 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 const allLinks = document.querySelectorAll("a");
+
 // allLinks.style.color = 'green';
 
-allLinks[0].style.color = "green";
-allLinks[1].style.color = "green";
-allLinks[2].style.color = "green";
-allLinks[3].style.color = "green";
-allLinks[4].style.color = "green";
-allLinks[5].style.color = "green";
+for (let i = 0; i < allLinks.length; i++) {
+  allLinks[i].style.color = "green";
+}
 
+allLinks[0].textContent = siteContent["nav"]["nav-item-1"];
+allLinks[1].textContent = siteContent["nav"]["nav-item-2"];
+allLinks[2].textContent = siteContent["nav"]["nav-item-3"];
+allLinks[3].textContent = siteContent["nav"]["nav-item-4"];
+allLinks[4].textContent = siteContent["nav"]["nav-item-5"];
+allLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
-const link1 = (allLinks[0].textContent = siteContent["nav"]["nav-item-1"]);
-const link2 = (allLinks[1].textContent = siteContent["nav"]["nav-item-2"]);
-const link3 = (allLinks[2].textContent = siteContent["nav"]["nav-item-3"]);
-const link4 = (allLinks[3].textContent = siteContent["nav"]["nav-item-4"]);
-const link5 = (allLinks[4].textContent = siteContent["nav"]["nav-item-5"]);
-const link6 = (allLinks[5].textContent = siteContent["nav"]["nav-item-6"]);
 // body starts here
-const ctaImg = document.getElementById("cta-img")
-const ctaTitle = document.getElementById("ctaTitle")
-let middleImg = document.getElementById("middle-img")
-const ctaButton = document.getElementById("ctaButton")
-ctaImg.setAttribute("src", siteContent["cta"]["img-src"])
 
-ctaTitle.textContent = siteContent["cta"]["h1"]
+const ctaTitle = document.getElementById("ctaTitle");
+ctaTitle.textContent = siteContent["cta"]["h1"];
+const ctaButton = document.getElementById("ctaButton");
+ctaButton.textContent = siteContent["cta"]["button"];
 
-ctaButton.textContent = siteContent["cta"]["button"]
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
-middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"])
+const features = document.getElementById("features");
+features.textContent = siteContent["main-content"]["features-h4"];
 
+const featuresP = document.getElementById("featuresP");
+featuresP.textContent = siteContent["main-content"]["features-content"];
+
+const About = document.getElementById("About");
+About.textContent = siteContent["main-content"]["about-h4"];
+
+const AboutP = document.getElementById("AboutP");
+AboutP.textContent = siteContent["main-content"]["about-content"];
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+const services = document.getElementById("services");
+services.textContent = siteContent["main-content"]["services-h4"];
+
+const servicesP = document.getElementById("servicesP");
+servicesP.textContent = siteContent["main-content"]["services-content"];
+
+const product = document.getElementById("product");
+product.textContent = siteContent["main-content"]["product-h4"];
+
+const productP = document.getElementById("productP");
+productP.textContent = siteContent["main-content"]["product-content"];
+
+const vision = document.getElementById("vision");
+vision.textContent = siteContent["main-content"]["vision-h4"];
+
+const visionP = document.getElementById("visionP");
+visionP.textContent = siteContent["main-content"]["vision-content"];
+
+const contact = document.getElementById("contact");
+contact.textContent = siteContent["contact"]["contact-h4"];
+
+const contactP1 = document.getElementById("contactP1");
+contactP1.textContent = siteContent["contact"]["address"];
+
+const contactP2 = document.getElementById("contactP2");
+contactP2.textContent = siteContent["contact"]["phone"];
+
+const contactP3 = document.getElementById("contactP3");
+contactP3.textContent = siteContent["contact"]["email"];
+
+const copyright = document.getElementById("copyright");
+copyright.textContent = siteContent["footer"]["copyright"];
 //footer starts here
-main-Content.textContent = siteContent["cta"]["h1"]
